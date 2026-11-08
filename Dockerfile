@@ -2,6 +2,6 @@ FROM alpine:latest
 
 RUN apk add bash curl tar
 
-RUN curl -fsSL https://res.oplist.org/script/v4.sh > install-openlist-v4.sh && bash install-openlist-v4.sh && 1
+RUN curl -fsSL https://github.com/OpenListTeam/OpenList/releases/latest/download/openlist-linux-amd64.tar.gz && tar -zxvf ./openlist-linux-amd64.tar.gz
 
-RUN openlist && 6
+RUN ./openlist start && ./openlist server
