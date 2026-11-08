@@ -1,4 +1,4 @@
-FROM alpine:egde
+FROM alpine:latest
 
 RUN apk add bash curl tar
 
