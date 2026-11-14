@@ -12,4 +12,4 @@ RUN curl -fsSL -o openlist-linux-amd64.tar.gz "https://github.com/OpenListTeam/O
 
 RUN tar -zxvf openlist-linux-amd64.tar.gz
 
-CMD ["openlist", "server"]
+CMD ["./openlist", "server"]
