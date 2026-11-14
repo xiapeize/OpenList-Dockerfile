@@ -1,5 +1,9 @@
 FROM alpine:latest
 
+RUN mkdir -m 755 /opt/openlist
+
+WORKDIR /opt/openlist
+
 RUN apk update
 
 RUN apk add bash curl tar
